@@ -11,8 +11,8 @@
       cluster: 'us2'
     });
 
-    var channel = pusher.subscribe('my-channel');
-    channel.bind('app1', function(data) {
+    var channel = pusher.subscribe('app1');
+    channel.bind('payment', function(data) {
       alert(JSON.stringify(data));
     });
   </script>

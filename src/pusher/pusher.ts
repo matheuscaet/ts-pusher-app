@@ -17,7 +17,7 @@ private pusher: any;
     }
 
     sendPusher(message: string, app: string) {
-        this.pusher.trigger("my-channel", app, {
+        this.pusher.trigger(app, "payment", {
             message: message
         });
     }
