@@ -15,7 +15,7 @@ class CPusher {
         });
     }
     sendPusher(message, app) {
-        this.pusher.trigger("my-channel", app, {
+        this.pusher.trigger(app, "payment", {
             message: message
         });
     }
